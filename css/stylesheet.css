@@ -87,15 +87,19 @@ h1 {
 	margin-left: 20px;
 }
 
+
 .social {
 	text-align: center;
+}
+
+.social.past-main {
+	
+	margin-bottom: 193px;
 }
 
 .largeImage {
 	top : 150px;
 }
-
-
 
 .content p {
 	color: #202C39;
@@ -140,3 +144,12 @@ h1 {
 #below-main {
 
 }
+
+#nav IMG, #nav li a {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+

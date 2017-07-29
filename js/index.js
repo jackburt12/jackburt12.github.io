@@ -31,8 +31,13 @@ $(window).on('scroll',function(){
     stop = Math.round($(window).scrollTop());
     if (stop > mainbottom) {
         $('.header').addClass('past-main');
+		$('.social').addClass('past-main');
+
     } else {
         $('.header').removeClass('past-main');
+		$('.social').removeClass('past-main');
+
+		
    }
 
 });
