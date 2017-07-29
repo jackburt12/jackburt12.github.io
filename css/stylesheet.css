@@ -1,6 +1,8 @@
 body {
-  background-color: #EAEAEA;
-  font-family: 'Oswald';
+  	background-color: #EAEAEA;
+  	font-family: 'Oswald';
+	margin: 0;
+	padding: 0;
 	
 }
 
@@ -84,5 +86,16 @@ h1 {
 	right:0;
 	z-index: 16;
 	position: fixed;
+}
+
+.largeImage {
+
+	background-image: url("images/placeholder.png");
+	height: 400px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
 }
 
