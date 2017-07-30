@@ -1,8 +1,24 @@
 var navBar = $('.navbar');
-navBar.append('<li class="marker"></li>');
+var main = $('.main');
+
+var markerThere = 0;
+
+navBar.find('li').removeClass('active');
+
+
 
 navBar.on("click" , "a" , function(){
-  
+	
+	if(markerThere === 0) {
+		navBar.append('<li class="marker"></li>');
+		markerThere = 1;
+	}
+	
+
+	if(/*navBar.find('.marker').parent().attr('id') == 'social1'*/true) {
+		main.append('<a href="https://twitter.com/jackburtdev" class="twitter-follow-button" data-show-count="false">Follow @jackburtdev</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>');
+	}
+	
     var navTap = $(this).closest('.navbar');
     var mrkWidth = $(this).parent('li').width();
     var marker = navTap.find('.marker');
@@ -18,6 +34,8 @@ navBar.on("click" , "a" , function(){
     setTimeout(function(){
       marker.addClass("anim")
     },200);
+	
+	
 
 });
 
@@ -41,3 +59,6 @@ $(window).on('scroll',function(){
    }
 
 });
+
+
+
