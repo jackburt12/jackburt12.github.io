@@ -137,6 +137,12 @@ h1 {
 	
 }
 
+.social-interact{
+	align-content: center;
+	width:100%;
+	text-align: center;
+}
+
 #main {
   height:10px;
 }

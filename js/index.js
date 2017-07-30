@@ -1,5 +1,5 @@
 var navBar = $('.navbar');
-var main = $('.main');
+var socialInteract = $('.social-interact');
 
 var markerThere = 0;
 
@@ -14,9 +14,12 @@ navBar.on("click" , "a" , function(){
 		markerThere = 1;
 	}
 	
+	console.log(navBar.find('.active').attr('id'));
 
-	if(/*navBar.find('.marker').parent().attr('id') == 'social1'*/true) {
-		main.append('<a href="https://twitter.com/jackburtdev" class="twitter-follow-button" data-show-count="false">Follow @jackburtdev</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>');
+
+	if(navBar.find('.active').attr('id') === "social1") {
+		socialInteract.append('<a href="https://twitter.com/jackburtdev" class="twitter-follow-button" data-show-count="false">Follow @jackburtdev</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>');
+		console.log("ifworked");
 	}
 	
     var navTap = $(this).closest('.navbar');
