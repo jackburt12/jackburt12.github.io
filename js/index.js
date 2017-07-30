@@ -14,12 +14,22 @@ navBar.on("click" , "a" , function(){
 		markerThere = 1;
 	}
 	
-	console.log(navBar.find('.active').attr('id'));
+	console.log(navBar.find('.active').find('a').attr('id'));
 
+	
 
-	if(navBar.find('.active').attr('id') === "social1") {
+	if(navBar.find('.active').find('a').attr('id') === "social1") {
+		socialInteract.find('twitter-follow-button').remove();
+		socialInteract.find('.fb-follow').remove();
+		
 		socialInteract.append('<a href="https://twitter.com/jackburtdev" class="twitter-follow-button" data-show-count="false">Follow @jackburtdev</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>');
-		console.log("ifworked");
+	} else if(navBar.find('.active').find('a').attr('id') === "social2") {
+		socialInteract.find('.twitter-follow-button').remove();
+		socialInteract.find('.fb-follow').remove();
+
+		
+		socialInteract.append('<div class="fb-follow" data-href="https://www.facebook.com/jack.burt.100" data-layout="button" data-size="small" data-show-faces="false"></div>');
+		console.log("fbworks");
 	}
 	
     var navTap = $(this).closest('.navbar');
@@ -35,7 +45,7 @@ navBar.on("click" , "a" , function(){
   
     marker.removeClass("anim").css({ "width" : mrkWidth , "left" : left });
     setTimeout(function(){
-      marker.addClass("anim")
+      marker.addClass("anim");
     },200);
 	
 	
