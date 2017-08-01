@@ -66,6 +66,7 @@ h1 {
 	margin-top: 0px;
 	z-index: 5;
 	height: 60px;
+  box-shadow: 0 8px 20px #202C39;
 }
 
 .header.past-main IMG {
@@ -224,4 +225,8 @@ h1 {
 .comment-form #buttons input:active {
   box-shadow: 0 3px #8d723f;
   transform:translateY(2px);
+}
+
+.comment-form #buttons input:hover {
+  cursor: pointer;
 }
