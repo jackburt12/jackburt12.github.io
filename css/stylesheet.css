@@ -3,7 +3,7 @@ body {
   	font-family: 'Oswald';
 	margin: 0;
 	padding: 0;
-	
+
 }
 
 h1 {
@@ -29,7 +29,7 @@ h1 {
 }
 
 .header ul {
-	
+
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -40,7 +40,7 @@ h1 {
 
 .header li {
 	display: inline;
-	
+
 }
 
 .header li a {
@@ -56,7 +56,7 @@ h1 {
 }
 
 .header li a:hover {
-	color: #202C39;	
+	color: #202C39;
 }
 
 .header.past-main {
@@ -69,12 +69,12 @@ h1 {
 }
 
 .header.past-main IMG {
-	
+
 	float: left;
 	margin-right: 100px;
 	height: 50px;
 	margin: 5px;
-	
+
 }
 
 .header.past-main ul {
@@ -93,7 +93,7 @@ h1 {
 }
 
 .social.past-main {
-	
+
 	margin-bottom: 193px;
 }
 
@@ -107,7 +107,7 @@ h1 {
 	font-size: 1.5em;
 	text-align: center;
 	font-family: 'Dosis';
-	width: 60%;
+	width: 50%;
 	align-content: center;
 	padding: 10px;
 	margin-left: auto;
@@ -135,7 +135,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	
+
 }
 
 .social-interact{
@@ -158,3 +158,70 @@ h1 {
 
 }
 
+.comment-form {
+  align-content: center;
+  text-align: center;
+  width: 500px;
+  margin:auto;
+  font-family: 'Dosis';
+  font-size: 20px;
+
+}
+
+.comment-form ul {
+  list-style: none;
+}
+
+.comment-form li {
+  padding: 5px;
+  margin: 5px;
+  text-align: right;
+
+}
+
+.comment-form input[type="text"] {
+  width: 75%;
+  float:right;
+  height: 30px;
+  font-family: 'Dosis';
+  font-size: 20px;
+
+
+}
+
+.comment-form textarea {
+  width: 75%;
+  margin-top: 5;
+  float: right;
+  resize: vertical;
+  max-height: 200px;
+  font-family: 'Dosis';
+  font-size: 20px;
+}
+
+.comment-form label {
+  margin-right: 5px;
+}
+
+.comment-form #buttons  {
+  position: relative;
+  display:inline-block;
+  content-align: center;
+  float:right;
+  width: 100%;
+}
+.comment-form #buttons input {
+  font-family: 'Dosis';
+  width: 36.2%;
+  background-color: #CCB68D;
+  color: #202C39;
+  font-size: 15px;
+  border-radius: 80px;
+  border:none;
+  box-shadow: 0 5px #c0a572;
+  outline: none;
+}
+.comment-form #buttons input:active {
+  box-shadow: 0 3px #8d723f;
+  transform:translateY(2px);
+}
