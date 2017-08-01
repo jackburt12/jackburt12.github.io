@@ -116,6 +116,15 @@ h1 {
 	overflow: auto;
 }
 
+.content a {
+  color: #CCB68D;
+  text-decoration: none;
+}
+
+.content a:hover{
+  text-shadow: 0 0 2px #c0a572;
+}
+
 .intro {
 	text-align: center;
 	color: #202C39;
