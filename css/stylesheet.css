@@ -19,6 +19,9 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 	height: 150px;
+  top:0;
+  -webkit-transition-property: top;
+  -webkit-transition-duration: 0.5s;
 }
 
 .header IMG {
@@ -88,9 +91,18 @@ h1 {
 	margin-left: 20px;
 }
 
+.header.hide {
+
+  top: -80px;
+}
+
 
 .social {
 	text-align: center;
+}
+
+.social a {
+  cursor: pointer;
 }
 
 .social.past-main {
@@ -238,4 +250,8 @@ h1 {
 
 .comment-form #buttons input:hover {
   cursor: pointer;
+}
+
+.projects {
+  background-color: #e2dcd0
 }
