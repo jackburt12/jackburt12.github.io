@@ -5,10 +5,13 @@
   <title>Jack Burt</title>
 
   <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
 </head>
 <body>
 
-  <div = class="header-full">
+  <div class="header-full" id ="header">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
@@ -25,11 +28,11 @@
     <div class="header" id="nav">
     	<img src="images/Asset 1.png" height="100">
     	<ul>
-    		  <li><a href="index.html">Home</a></li>
-    		  <li><a href="about.html">About</a></li>
-    		  <li><a href="projects.html">Projects</a></li>
-    		  <li><a href="shop.html">Shop</a></li>
-    		  <li><a href="contact.html">Contact</a></li>
+    		  <li><a href="#header">Home</a></li>
+    		  <li><a href="#about-me">About</a></li>
+    		  <li><a href="#projects">Projects</a></li>
+    		  <li><a href="#">Shop</a></li>
+    		  <li><a href="#contact-me">Contact</a></li>
     	</ul>
     </div>
 
@@ -60,7 +63,7 @@
     <h1 style = "position: relative; top: 50%; transform: translateY(-50%); color: #CCB68D; font-size: 50px;">Placeholder</h1>
   </div>
 	<div class="content">
-	  <h1>About Me</h1>
+	  <h1 id="about-me" style="padding-top: 120px; margin-top: -120px;">About Me</h1>
     <p>Currently in my second year of a BSc Computer Science degree at Surrey,
     I'm just beginning my journey into the world of development. At this stage
     I'm prioritising experimentation with different ideas, platforms and processes,
@@ -71,9 +74,145 @@
     business with Liverpool fans (just kidding).</p>
   </div>
 
-  <div class="projects">
-    <h1>Projects</h1>
+  <div class="project-header">
+    <h1 id="projects"style="padding-top: 120px; margin-top: -120px;">Projects</h1>
   </div>
+  <div class="projects" style="background-color:#4c5660;">
+
+    <div class="projects-container">
+  		<ul>
+  			<li class="cd-single-project">
+  				<div class="cd-title">
+  					<h2>Retail Game</h2>
+  					<p>Made in Unity</p>
+  				</div> <!-- .cd-title -->
+
+  				<div class="cd-project-info">
+  					<p>I started making this game in the summer before Uni, I wanted to make a start
+              on learning the initial concepts of object-oriented programming. I didn't get very
+              far and made very slow progress of course, and ended up abandoning for the year when
+              I started Uni. After that first year however when I had a better grasp of the concepts
+              I started enjoying it much more and actually started to progress with things.
+
+              I started off by creating the base functionality of the game, the player animation,
+              customisation, moving and rotating objects and the UI.
+
+              To be continued...
+  					</p>
+  				</div> <!-- .cd-project-info -->
+  			</li>
+
+  			<li class="cd-single-project">
+  				<div class="cd-title">
+  					<h2>More projects to come!</h2>
+  					<p>Brief description of the project here</p>
+  				</div> <!-- .cd-title -->
+
+  				<div class="cd-project-info">
+  					<p>
+  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  					</p>
+  				</div> <!-- .cd-project-info -->
+  			</li>
+
+  			<li class="cd-single-project">
+  				<div class="cd-title">
+  					<h2>More projects to come!</h2>
+  					<p>Brief description of the project here</p>
+  				</div> <!-- .cd-title -->
+
+  				<div class="cd-project-info">
+  					<p>
+  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  					</p>
+  				</div> <!-- .cd-project-info -->
+  			</li>
+
+  			<li class="cd-single-project">
+  				<div class="cd-title">
+  					<h2>More projects to come!</h2>
+  					<p>Brief description of the project here</p>
+  				</div> <!-- .cd-title -->
+
+  				<div class="cd-project-info">
+  					<p>
+  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  					</p>
+  				</div> <!-- .cd-project-info -->
+  			</li>
+  		</ul>
+  		<a href="#0" class="cd-close">Close</a>
+  		<a href="#0" class="cd-scroll">Scroll</a>
+  	</div> <!-- .project-container -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
+</div>
+<div="contact">
+<div = class="header-full">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  <div id="fb-root"></div>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="content">
+  <h1 id ="contact-me"style="padding-top: 120px; margin-top: -120px;">Contact Me</h1>
+
+  <p>If you want to get in touch for any reason, whether it be for business, a question,
+  or even just a chat, feel free through any of the following methods, I'll get back
+  to you as soon as I can!</p>
+</div>
+
+<div class="content">
+  <p>Send me an e-mail at <a href="mailto:contact@jackburt.me.uk">contact@jackburt.me.uk!</a></p>
+  <p>Tweet me <a href="http://twitter.com/share?text=%40jackburtdev">@jackburtdev</a>!</p>
+  <p>Add me on Facebook!</p>
+  <p>Leave me a comment below!</p>
+</div>
+<div class="comment-form">
+
+  <form id="contact-form" action="script.php" method="post">
+    <input type="hidden" name="redirect" value="http://www.opera.com" />
+      <ul>
+          <li>
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" value="" />
+          </li>
+          <li>
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" value="" />
+          </li>
+          <li id="text-area-content">
+              <label for="comments">Comments:</label>
+              <textarea name="comments" id="comments" cols="25" rows="3"></textarea>
+          </li>
+          <li id="buttons">
+              <input type="submit" value="submit" />
+              <input type="reset" value="reset" />
+          </li>
+      </ul>
+  </form>
+
+</div>
+
+</div
 
 </body>
 </html>
