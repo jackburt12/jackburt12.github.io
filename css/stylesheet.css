@@ -3,7 +3,6 @@ body {
   	font-family: 'Oswald';
 	margin: 0;
 	padding: 0;
-
 }
 
 h1 {
@@ -479,6 +478,7 @@ h1 {
   z-index: 1;
   left: 0;
   top: 12.5vh;
+  padding:10px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
