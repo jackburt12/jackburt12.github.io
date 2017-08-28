@@ -249,9 +249,9 @@ h1 {
   margin-bottom: 20px;
 }
 .comment-form #buttons input {
-  font-family: 'Dosis';
   width: 49.5%;
   background-color: #CCB68D;
+  font-family: 'Dosis';
   color: #202C39;
   font-size: 15px;
   border-radius: 80px;
@@ -344,6 +344,39 @@ padding-top: 14px;
   z-index: 10;
   position: relative;
   width:inherit;
+}
+
+.language-grid ul {
+  list-style: none;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.language-grid li{
+  margin-left: 5px;
+  margin-right: 5px;
+
+  display: inline-block;
+  padding: 0 auto;
+  font-family: 'Oswald';
+  color: #FFFFFF;
+  font-size: 35px;
+  text-align: center;
+  vertical-align: middle;
+  width:150px;
+  height: 150px;
+  border-radius: 5px;
+  border:none;
+  background-color: #CCB68D;
+  line-height: 150px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+
+}
+
+.language-grid li:hover {
+  background-color: #b89961;
 }
 
 .footer {
