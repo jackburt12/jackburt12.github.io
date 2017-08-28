@@ -3,6 +3,7 @@ body {
   	font-family: 'Oswald';
 	margin: 0;
 	padding: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -66,7 +67,7 @@ h1 {
 	background-color: #EAEAEA;
 	width: 100%;
 	margin-top: 0px;
-	z-index: 5;
+	z-index: 50;
 	height: 60px;
   box-shadow: 0 8px 20px #202C39;
 }
@@ -171,18 +172,11 @@ h1 {
 
 }
 
-#nav IMG, #nav li a {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-
-}
-
 .comment-form {
-  align-content: center;
-  text-align: center;
-  width: 500px;
+  align-content: left;
+  text-align: left;
+  max-width: 1100px;
+  width: 75%;
   margin:auto;
   font-family: 'Dosis';
   font-size: 20px;
@@ -196,28 +190,48 @@ h1 {
 }
 
 .comment-form ul {
+  clear:left;
+  margin-top: -40px;
   list-style: none;
 }
 
 .comment-form li {
-  padding: 5px;
-  margin: 5px;
+  text-align: left;
+  font-family: 'Dosis';
+  font-size: 20px;
+  width: 78%;
+  float:left;
+}
+
+.comment-form p {
+  min-width: 190px;
+  width: 20%;
+  float:right;
+  overflow-x: hidden;
+  color:#CCB68D;
+  font-family: 'Oswald';
   text-align: right;
 
 }
 
-.comment-form input[type="text"] {
-  width: 75%;
-  float:right;
-  height: 30px;
-  font-family: 'Dosis';
-  font-size: 20px;
+.comment-form a {
 
+  font-family: 'Dosis';
+  text-decoration: none;
+  color: #202C39;
 
 }
 
+.comment-form input[type="text"] {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 30px;
+  font-family: 'Dosis';
+  font-size: 20px;
+}
+
 .comment-form textarea {
-  width: 75%;
+  width: 100%;
   margin-top: 5;
   float: right;
   resize: vertical;
@@ -226,20 +240,16 @@ h1 {
   font-size: 20px;
 }
 
-.comment-form label {
-  margin-right: 5px;
-}
-
 .comment-form #buttons  {
+  margin-top: 10px;
   position: relative;
   display:inline-block;
-  content-align: center;
-  float:right;
   width: 100%;
+  margin-bottom: 20px;
 }
 .comment-form #buttons input {
   font-family: 'Dosis';
-  width: 36.2%;
+  width: 49.5%;
   background-color: #CCB68D;
   color: #202C39;
   font-size: 15px;
@@ -260,9 +270,111 @@ h1 {
 
 .project-header {
 
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+background-color: #4c5660;
+width: 200px;
+height: 125px;
+text-align: center;
+margin: 0px auto;
+vertical-align: middle;
+-moz-border-radius: 56px;
+-webkit-border-radius: 56px;
+border-radius: 56px;
+-khtml-border-radius: 56px;
 
+}
+.project-header h1 {
+
+  padding-top: 14px;
+
+}
+
+.contact-header {
+
+  background-color: #EAEAEA;
+  width: 200px;
+  height: 125px;
+  text-align: center;
+  margin: 0px auto;
+  vertical-align: middle;
+  -moz-border-radius: 56px;
+  -webkit-border-radius: 56px;
+  border-radius: 56px;
+  -khtml-border-radius: 56px;
+  margin-top: -80px;
+  z-index: 10;
+  position: relative;
+
+}
+
+.contact-header h1 {
+padding-top: 14px;
+}
+
+.contact {
+  margin-top: -80px;
+  z-index: 10;
+  position: relative;
+  width:inherit;
+  margin-bottom: 250px;
+}
+
+.about-header {
+
+  background-color: #EAEAEA;
+  width: 200px;
+  height: 125px;
+  text-align: center;
+  margin: 0px auto;
+  vertical-align: middle;
+  -moz-border-radius: 56px;
+  -webkit-border-radius: 56px;
+  border-radius: 56px;
+  -khtml-border-radius: 56px;
+  margin-top: -80px;
+  z-index: 10;
+  position: relative;
+
+}
+.about-header h1 {
+padding-top: 14px;
+}
+.about {
+  margin-top: -80px;
+  z-index: 10;
+  position: relative;
+  width:inherit;
+}
+
+.footer {
+  clear: both;
+  height: 200px;
+  width: 100%;
+  background-color: #4c5660;
+}
+.footer-contents {
+
+  width: 60%;
+  height: 100%;
+
+}
+.footer ul {
+  list-style: none;
+  float: left;
+  align-content: center;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+.footer li {
+  text-decoration: none;
+  color: #CCB68D;
+  font-family: 'Oswald';
+}
+.footer p {
+  color: #CCB68D;
+  font-family: 'Oswald';
+  float: right;
+  margin-top: -60px;
+  margin-right: 200px;
 }
 
 *, *::after, *::before {
@@ -272,6 +384,7 @@ h1 {
 }
 
 .projects-container {
+  margin-top: -60px;
   height: 60vh;
   width: 100vw;
   position: relative;
@@ -558,7 +671,7 @@ h1 {
   margin-top: 100vh;
   padding: 4em 0;
   cursor: auto;
-  background-color: #ffffff;
+  background-color: #4c5660;
   color: #3f538e;
   -webkit-transition: opacity 0.4s 0s, visibility 0s 0.4s;
   -moz-transition: opacity 0.4s 0s, visibility 0s 0.4s;
@@ -569,10 +682,14 @@ h1 {
   opacity: 1;
 }
 .cd-project-info p {
+  color: #202C39;
+	font-size: 1.5em;
+	text-align: center;
+	font-family: 'Dosis';
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
-  line-height: 2;
+  margin-bottom: 3000px;
 }
 @media only screen and (min-width: 1024px) {
   .cd-project-info {
@@ -584,7 +701,7 @@ h1 {
 .projects-container .cd-close,
 .projects-container .cd-scroll {
   display: block;
-  z-index: 1;
+  z-index: 20;
   width: 44px;
   height: 44px;
   /* image replacement */
@@ -598,9 +715,10 @@ h1 {
 }
 
 .projects-container .cd-close {
-  position:abs;
+  position:sticky;
   top: 30px;
-  right: 5%;
+  float: right;
+  margin-right: 52px;
   background: url("../img/cd-icon-close-mobile.svg") no-repeat center center;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
@@ -616,7 +734,7 @@ h1 {
 
 .projects-container .cd-scroll {
   position: absolute;
-  bottom: 30px;
+  bottom: 80px;
   left: 50%;
   -webkit-transform: translateX(-50%) scale(0);
   -moz-transform: translateX(-50%) scale(0);

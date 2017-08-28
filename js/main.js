@@ -20,7 +20,9 @@ jQuery(document).ready(function($){
 
 	//scroll to project info
 	$('.projects-container .cd-scroll').on('click', function(){
-		$('.projects-container').animate({'scrollTop':$(window).height()}, 500);
+		$('.projects-container').animate({'scrollTop':$(window).height()+35}, 500);
+		//$('.projects-container').animate({'scrollTop':$("#test").offset().top}, 500);
+
 	});
 
 	//update title and .cd-scroll opacity while scrolling
@@ -55,7 +57,7 @@ jQuery(document).ready(function($){
 
 	function changeOpacity(){
 		var newOpacity = 1- ($('.projects-container').scrollTop())/300;
-		$('.projects-container .cd-scroll').css('opacity', newOpacity);
+		//$('.projects-container .cd-scroll').css('opacity', newOpacity);
 		$('.is-full-width .cd-title').css('opacity', newOpacity);
 		//Bug fixed - Chrome background-attachment:fixed rendering issue
 		$('.is-full-width').hide().show(0);
