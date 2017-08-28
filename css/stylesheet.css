@@ -193,6 +193,7 @@ h1 {
   clear:left;
   margin-top: -40px;
   list-style: none;
+  z-index: 20;
 }
 
 .comment-form li {
@@ -665,14 +666,17 @@ padding-top: 14px;
 }
 
 .cd-project-info {
-  clear: both;
+  width: 70%;
+  align-content: center;
+  margin: auto;
+  text-align: justify;
   visibility: hidden;
   opacity: 0;
   margin-top: 100vh;
   padding: 4em 0;
   cursor: auto;
   background-color: #4c5660;
-  color: #3f538e;
+  color: #CCB68D;
   -webkit-transition: opacity 0.4s 0s, visibility 0s 0.4s;
   -moz-transition: opacity 0.4s 0s, visibility 0s 0.4s;
   transition: opacity 0.4s 0s, visibility 0s 0.4s;
@@ -682,14 +686,18 @@ padding-top: 14px;
   opacity: 1;
 }
 .cd-project-info p {
-  color: #202C39;
+  color: #CCB68D;
 	font-size: 1.5em;
-	text-align: center;
 	font-family: 'Dosis';
   width: 90%;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 3000px;
+}
+.cd-project-info img {
+  width: 35%;
+  float:right;
+  margin-left: 20px;
 }
 @media only screen and (min-width: 1024px) {
   .cd-project-info {
