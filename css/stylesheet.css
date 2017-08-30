@@ -379,6 +379,15 @@ padding-top: 14px;
   background-color: #b89961;
 }
 
+.language-grid li::before {
+  content: attr(data-before);
+}
+
+.language-grid li:hover::before {
+  content: attr(data-hover);
+}
+
+
 .footer {
   clear: both;
   height: 200px;
