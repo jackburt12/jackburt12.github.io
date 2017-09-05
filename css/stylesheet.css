@@ -390,7 +390,7 @@ padding-top: 14px;
 
 .footer {
   clear: both;
-  height: 200px;
+  height: 120px;
   width: 100%;
   background-color: #4c5660;
 }
@@ -404,19 +404,26 @@ padding-top: 14px;
   list-style: none;
   float: left;
   align-content: center;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: 200px;
+
 }
 .footer li {
-  text-decoration: none;
   color: #CCB68D;
   font-family: 'Oswald';
 }
+
+.footer li a {
+  text-decoration: none;
+  color: #CCB68D;
+
+}
+
 .footer p {
   color: #CCB68D;
   font-family: 'Oswald';
   float: right;
-  margin-top: -60px;
+  margin-top: -40px;
   margin-right: 200px;
 }
 
@@ -729,7 +736,7 @@ padding-top: 14px;
 }
 .cd-project-info p {
   color: #CCB68D;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	font-family: 'Dosis';
   width: 90%;
   max-width: 1200px;
@@ -741,6 +748,16 @@ padding-top: 14px;
   float:right;
   margin-left: 20px;
 }
+
+.cd-project-info iframe {
+  margin-left: -150px;
+  width:65%;
+  height:350px;
+  float:left;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
 @media only screen and (min-width: 1024px) {
   .cd-project-info {
     position: relative;

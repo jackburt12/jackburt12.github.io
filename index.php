@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+  //if(isset($_POST['submit'])) {
+    require 'phpmailer/PHPMailerAutoLoad.php';
+
+    function sendemail($to, $from, $fromName, $subject, $message) {
+      $mail = new PhpMailer();
+    }
+  }
+?>
 <html>
 <head>
   <meta charset="utf-8">
@@ -192,7 +200,7 @@
               </li>
 
               <li id="buttons">
-                  <input type="submit" value="submit" />
+                  <input type="submit" name="submit" value="submit" />
                   <input type="reset" value="reset" />
               </li>
           </ul>
