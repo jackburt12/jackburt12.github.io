@@ -4,6 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
   overflow-x: hidden;
+
 }
 
 h1 {
@@ -22,6 +23,8 @@ h1 {
   top:0;
   -webkit-transition-property: top;
   -webkit-transition-duration: 0.5s;
+      min-width: 650px;
+
 }
 
 .header IMG {
@@ -47,15 +50,15 @@ h1 {
 }
 
 .header li a {
-	width: 12%;
+	width: auto;
 	display: inline-block;
-    color: #CCB68D;
-    padding: 14px 14px;
-    text-decoration: none;
+  color: #CCB68D;
+  padding: 14px 14px;
+  text-decoration: none;
 	font-size: 25px;
 	text-transform: uppercase;
-
-
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .header li a:hover {
@@ -151,7 +154,7 @@ h1 {
 
 .largeImage {
 
-	background-image: url('../images/placeholder.png');
+	background-image: url('../images/desk.jpg');
 	height: 400px;
 	background-attachment: fixed;
     background-position: center;
@@ -171,7 +174,12 @@ h1 {
 #below-main {
 
 }
+.header-full {
 
+  margin-bottom: 150px;
+
+}
+/*
 .comment-form {
   align-content: left;
   text-align: left;
@@ -183,14 +191,9 @@ h1 {
 
 
 }
-.header-full {
 
-  margin-bottom: 150px;
-
-}
 
 .comment-form ul {
-  clear:left;
   margin-top: -40px;
   list-style: none;
   z-index: 20;
@@ -200,13 +203,13 @@ h1 {
   text-align: left;
   font-family: 'Dosis';
   font-size: 20px;
-  width: 78%;
-  float:left;
+  display: table-row;
+
 }
 
 .comment-form p {
-  min-width: 190px;
-  width: 20%;
+  min-width: 200px;
+  width: auto;
   float:right;
   overflow-x: hidden;
   color:#CCB68D;
@@ -225,7 +228,7 @@ h1 {
 
 .comment-form input[type="text"] {
   margin-bottom: 10px;
-  width: 100%;
+  width:  100%;
   height: 30px;
   font-family: 'Dosis';
   font-size: 20px;
@@ -234,7 +237,7 @@ h1 {
 .comment-form textarea {
   width: 100%;
   margin-top: 5;
-  float: right;
+  float: left;
   resize: vertical;
   max-height: 200px;
   font-family: 'Dosis';
@@ -267,6 +270,83 @@ h1 {
 .comment-form #buttons input:hover {
   cursor: pointer;
 }
+*/
+
+.comment-form {
+  font-family: 'Dosis';
+  font-size: 20px;
+  width: 75%;
+  margin: auto;
+}
+.comment-form ul {
+  list-style: none;
+  z-index: 20;
+}
+.comment-form p {
+   font-family: 'Oswald';
+   color:#CCB68D;
+}
+
+.comment-form a {
+
+  font-family: 'Dosis';
+  text-decoration: none;
+  color: #202C39;
+}
+
+.left {
+    overflow: hidden;
+}
+
+.right {
+    float: right;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.right p {
+      float: right;
+      text-align: right;
+}
+
+.left input[type="text"] {
+    width:100%;
+ }
+ .left textarea {
+    width:100%;
+ }
+ 
+ .comment-form #buttons  {
+  margin-top: 10px;
+  position: relative;
+  display:inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow-x: all;
+}
+.left #buttons input {
+  width: 49%;
+  white-space: nowrap;
+  background-color: #CCB68D;
+  font-family: 'Dosis';
+  color: #202C39;
+  font-size: 15px;
+  border-radius: 80px;
+  border:none;
+  box-shadow: 0 5px #c0a572;
+  outline: none;
+}
+.comment-form #buttons input:active {
+  box-shadow: 0 3px #8d723f;
+  transform:translateY(2px);
+}
+
+.comment-form #buttons input:hover {
+  cursor: pointer;
+}
+
+
+
 
 
 .project-header {
@@ -316,7 +396,7 @@ padding-top: 14px;
   z-index: 10;
   position: relative;
   width:inherit;
-  margin-bottom: 250px;
+  margin-bottom: 10px;
 }
 
 .about-header {
@@ -426,6 +506,12 @@ padding-top: 14px;
   margin-top: -40px;
   margin-right: 200px;
 }
+/*
+ * For all of the projects section of this site:
+ * Copyright (c) 2014 Jonathan Catmull
+ * Licensed under the MIT license.
+ * Adapted for use on this site.
+ */
 
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
@@ -444,7 +530,6 @@ padding-top: 14px;
   -webkit-overflow-scrolling: touch;
 }
 .projects-container::before {
-  /* never visible - this is used in jQuery to check the current MQ */
   content: 'mobile';
   display: none;
 }
@@ -488,7 +573,7 @@ padding-top: 14px;
   display: none;
 }
 .projects-container .cd-single-project:nth-of-type(2) {
-  top: 25vh;
+  top: 15vh;
 }
 .projects-container .cd-single-project:nth-of-type(2)::after {
   background-image: url("../img/img-2-small.jpg");
@@ -497,7 +582,7 @@ padding-top: 14px;
   content: 'img/img-2-small.jpg';
 }
 .projects-container .cd-single-project:nth-of-type(3) {
-  top: 50vh;
+  top: 30vh;
 }
 .projects-container .cd-single-project:nth-of-type(3)::after {
   background-image: url("../img/img-3-small.jpg");
@@ -506,7 +591,7 @@ padding-top: 14px;
   content: 'img/img-3-small.jpg';
 }
 .projects-container .cd-single-project:nth-of-type(4) {
-  top: 75vh;
+  top: 45vh;
 }
 .projects-container .cd-single-project:nth-of-type(4)::after {
   background-image: url("../img/img-4-small.jpg");
@@ -640,7 +725,7 @@ padding-top: 14px;
   position: absolute;
   z-index: 1;
   left: 0;
-  top: 12.5vh;
+  top: 7.5vh;
   padding:10px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -858,6 +943,7 @@ padding-top: 14px;
   -o-transform: translateX(-50%) scale(1.2);
   transform: translateX(-50%) scale(1.2);
 }
+**/
 
 @-webkit-keyframes cd-translate {
   0% {

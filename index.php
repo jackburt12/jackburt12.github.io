@@ -1,12 +1,4 @@
-<?php
-  //if(isset($_POST['submit'])) {
-    require 'phpmailer/PHPMailerAutoLoad.php';
-
-    function sendemail($to, $from, $fromName, $subject, $message) {
-      $mail = new PhpMailer();
-    }
-  }
-?>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -130,31 +122,30 @@
   			<li class="cd-single-project">
   				<div class="cd-title">
   					<h2>More projects to come!</h2>
-  					<p>Brief description of the project here</p>
-  				</div> <!-- .cd-title -->
+  					<p>In the near future</p>
+  				</div>
   				<div class="cd-project-info">
   					<p>
-  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  						As I progress through the early stages of my adventure into software development, I will be creating
+              more and more projects I can share on this platform, so keep an eye out for these spots being filled
+              in the near future!
   					</p>
-  				</div> <!-- .cd-project-info -->
+  				</div>
   			</li>
   			<li class="cd-single-project">
   				<div class="cd-title">
   					<h2>More projects to come!</h2>
-  					<p>Brief description of the project here</p>
-  				</div> <!-- .cd-title -->
+  					<p>In the near future</p>
+  				</div> 
   				<div class="cd-project-info">
   					<p>
-  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-  						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+  						As I progress through the early stages of my adventure into software development, I will be creating
+              more and more projects I can share on this platform, so keep an eye out for these spots being filled
+              in the near future!
   					</p>
-  				</div> <!-- .cd-project-info -->
+  				</div>
   			</li>
+        
   		</ul>
   		<a href="#0" class="cd-close">Close</a>
   		<a href="#0" class="cd-scroll">Scroll</a>
@@ -172,15 +163,11 @@
       or even just a chat, feel free through any of the following methods, I'll get back
       to you as soon as I can!</p>
     </div>
+    <!--
     <div class="comment-form">
       <form id="contact-form" action="script.php" method="post">
         <input type="hidden" name="redirect" value="http://www.opera.com" />
-        <p><br>Email: <br><a href="mailto:contact@jackburt.me.uk">contact@jackburt.me.uk</a>
-        <br><br>
-        Twitter: <br><a href="http://twitter.com/share?text=%40jackburtdev">@jackburtdev</a>
-        <br><br>
-        LinkedIn: <br><a href="https://www.linkedin.com/in/jack-burt-779809124/">Jack Burt</a></p>
-        </p>
+       
         <ul>
               <li>Name:</li>
               <li>
@@ -200,12 +187,57 @@
               </li>
 
               <li id="buttons">
-                  <input type="submit" name="submit" value="submit" />
+                  <input type="submit" value="submit" />
                   <input type="reset" value="reset" />
               </li>
           </ul>
       </form>
     </div>
+  -->
+  <div class="comment-form">
+    <div class="right">
+      <p>
+        Email: 
+        <br>
+        <a href="mailto:contact@jackburt.me.uk">contact@jackburt.me.uk</a>
+        <br><br>
+        Twitter: <br><a href="http://twitter.com/share? text=%40jackburtdev">@jackburtdev</a>
+        <br><br>
+        LinkedIn: 
+        <br>
+        <a href="https://www.linkedin.com/in/jack-burt-779809124/">Jack Burt</a>
+      </p>
+    </div> 
+    <div class="left">
+      <form id="contact-form" action="script.php" method="post">
+        <input type="hidden" name="redirect" value="http://www.opera.com" />
+          <ul>
+          <li>Name:</li>
+          <li>
+            <input type="text" name="name" id="name" value="" />
+          </li>
+          <li>Email:</li>
+          <li>
+            <input type="text" name="email" id="email" value="" />
+          </li>
+          <li>Subject:</li>
+          <li>
+            <input type="text" name="subject" id="subject" value="" />
+          </li>
+          <li>Message:</li>
+          <li id="text-area-content">
+            <textarea name="message" id="message" cols="25" rows="3"></textarea>
+          </li>
+
+          <li id="buttons">
+            <input type="submit" value="submit" />
+            <input type="reset" value="reset" />
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+
 
   </div>
   <div class="footer">
