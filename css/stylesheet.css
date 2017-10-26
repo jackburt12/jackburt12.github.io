@@ -311,9 +311,12 @@ h1 {
 
 .left input[type="text"] {
     width:100%;
+    font-family: 'Dosis';
+
  }
  .left textarea {
     width:100%;
+    font-family: 'Dosis';
  }
  
  .comment-form #buttons  {
