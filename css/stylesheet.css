@@ -275,7 +275,7 @@ h1 {
 .comment-form {
   font-family: 'Dosis';
   font-size: 20px;
-  width: 75%;
+  width: 60%;
   margin: auto;
 }
 .comment-form ul {
@@ -316,6 +316,7 @@ h1 {
  }
  .left textarea {
     width:100%;
+    resize: vertical;
     font-family: 'Dosis';
  }
  
