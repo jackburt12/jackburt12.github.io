@@ -2,19 +2,36 @@
 /** * style variables */
 /** * Control & indicator mixin */
  .carousel {
-      height: 25vw;
-      width: 70vw;
+      height: 30vw;
+      width: 100vw;
       overflow: hidden;
       text-align: center;
       position: relative;
       padding: 0;
       list-style: none;
       margin:auto !important;
+      -moz-box-shadow:inset 0 0 10px #000000;
+      -webkit-box-shadow:inset 0 0 10px #000000;
+      box-shadow:inset 0 0 50px 50px #000000;
+
+
      /** * Where the magic happens */
      /** * Control element - right/left arrows */
      /** * Element for holding slide indicators */
      /** * Indicator for indicating active slide */
      /** * Create rules for when slides are contained within a track */
+}
+
+.carousel_overlay {
+  height: 30vw;
+  width: 100vw;
+  position: absolute;
+  z-index: 20;
+  margin:auto !important;
+  -moz-box-shadow:inset 0 0 30px 10px rgb(0,0,0,0.65);
+  -webkit-box-shadow:inset 0 0 30px 10px rgb(0,0,0,0.65);
+  box-shadow:inset 0 0 30px 10px rgb(0,0,0,0.65);
+
 }
 
  .carousel__controls, .carousel__activator {
@@ -132,10 +149,14 @@
  .carousel__control--backward {
       left: 10px;
       transform: rotate(-135deg);
+            z-index: 30;
+
 }
  .carousel__control--forward {
       right: 10px;
       transform: rotate(45deg);
+            z-index: 30;
+
 }
  .carousel__indicators {
       position: absolute;
@@ -213,7 +234,7 @@
       display: inline-block;
 }
  .my-carousel {
-      border-radius: 5px;
+      border-radius: 0px;
       margin: 30px;
 }
  .carousel__slide {
@@ -227,7 +248,7 @@
      font-family: 'Karla', sans-serif;
      font-size: 50px;
      line-height: 50px;
-     color: #000;
+     color: #FFF;
      margin:10px;
 
 
@@ -235,7 +256,6 @@
 
 .carousel__track span {
      
-     background-color:rgba(255, 255, 255, 0.75);
      display: inline-block;
      border-radius: 8px;
      padding:0;
@@ -243,7 +263,6 @@
      top: 50%;
      text-align: center;
      margin-top: -50px;
-     text-transform: lowercase;
 }
 
 .carousel__track h2, h3 {
@@ -257,7 +276,7 @@
       background-color: #fafafa;
 }
  .carousel__slide:nth-of-type(1), .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
-      background-image: url("../img/mukuba.jpg");
+      background-image: url("../img/copper.jpg");
       background-size: cover;
       background-position: center;
 }
