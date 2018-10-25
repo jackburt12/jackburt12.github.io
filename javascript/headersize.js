@@ -2,7 +2,7 @@ Barba.Dispatcher.on('transitionCompleted', function() {
 
 	var pathname = window.location.pathname;
 	console.log("headersize");
-	if(pathname === '/index.html') {
+	if(pathname === '/index.html' || pathname === '/') {
 		console.log("enlarging");
 
 		$(".scalable-wrapper").addClass("index");
