@@ -1,168 +1,261 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <title>Jack Burt</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-  <head>
-    <title>Horizon Corporation</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/carousel.css">
-    <script src="javascript/smoothscroll.js"></script>
-    <script src="javascript/jquery-3.3.1.min.js"></script>
-    <script src="javascript/barba.min.js"></script>
-    <script src="javascript/fade-barba.js"></script>
-    <script src="javascript/scroll.js"></script>
-    <script src="javascript/coin-animation.js"></script>
-    <script src="javascript/buildings-animation.js"></script>
-    <script src="javascript/blueprint-animation.js"></script>
-    <script src="javascript/background.js"></script>
-    <script src="javascript/aosinit.js"></script>
-    <script src="javascript/carousel.js"></script>
-    <script src="javascript/headersize.js"></script>
+</head>
+<body>
+  <div id = top></div>
+  <div class="header" id="nav">
+    <img src="images/Asset 1.png" height="100">
+    <ul>
+    		 <li><a href="#top">Home</a></li>
+    		 <li><a href="#about-me">About</a></li>
+    		 <li><a href="#projects">Projects</a></li>
+    		 <li><a href="#contact-me">Contact</a></li>
+    </ul>
+  </div>
+  <div id="main"> </div>
 
+    <div class="social" id="below-main">
+    	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="css/socialstyle.css">
 
+    	<ul class="navbar">
+        <li class="active"><a class="fa fa-twitter" id="social1" href="https://twitter.com/jackburtdev"></a></li>
+    		<li><a class="fa fa-reddit" id="social2" href="https://reddit.com/u/jackburtdev"></a></li>
+    		<li><a class="fa fa-github" id="social3" href="https://github.com/jackburt12/"></a></li>
+    		<li><a class="fa fa-linkedin" id="social4" href="https://www.linkedin.com/in/jack-burt-779809124/"></a></li>
+    		<li><a class="fa fa-envelope" id="social5" href="mailto:contact@jackburt.me.uk"></a></li>
+      </ul>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="js/index.js"></script>
 
-  </head>
-  
-  <body>
-    <div  id="barba-wrapper">
-
-
-      <div class='header'> 
-        
-        <div class="scalable-wrapper index">
-          <div class="logo index">
-            <img class="index" src="img/horizon-swish-blue.png">
-            <p class="index" id="horizon">HORIZON</p>
-            <p class="index" id="corp">CORPORATION</p>
-          </div>
-        </div>
-
-        <div class='nav'>
-
-          <ul class="index">
-              <li><a href="index.html">Who We Are</a></li>
-              <li><a href="whatwedo.html">What We Do</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-
-        </div>
-
-      </div>
-      <div class='barba-container content' id='about'>
-        
-      <div class="break"></div>
-      <br>
-      <br>
-
-      <div class="carousel_overlay"></div>
-
-        <div class="carousel my-carousel carousel--translate">
-          <input class="carousel__activator" type="radio" name="carousel" id="F" checked="checked" />
-          <input class="carousel__activator" type="radio" name="carousel" id="G" />
-          <input class="carousel__activator" type="radio" name="carousel" id="H" />
-          <input class="carousel__activator" type="radio" name="carousel" id="I" />
-          <input class="carousel__activator" type="radio" name="carousel" id="J" />
-
-          <div class="carousel__controls">
-            <label class="carousel__control carousel__control--backward" for="J"></label>
-            <label class="carousel__control carousel__control--forward" for="G"></label>
-          </div>
-          <div class="carousel__controls">
-            <label class="carousel__control carousel__control--backward" for="F"></label>
-            <label class="carousel__control carousel__control--forward" for="H"></label>
-          </div>
-          <div class="carousel__controls">
-            <label class="carousel__control carousel__control--backward" for="G"></label>
-            <label class="carousel__control carousel__control--forward" for="I"></label>
-          </div>
-          <div class="carousel__controls">
-            <label class="carousel__control carousel__control--backward" for="H"></label>
-            <label class="carousel__control carousel__control--forward" for="J"></label>
-          </div>
-          <div class="carousel__controls">
-            <label class="carousel__control carousel__control--backward" for="I"></label>
-            <label class="carousel__control carousel__control--forward" for="F"></label>
-          </div>
-
-          <div class="carousel__track">
-            <li class="carousel__slide">
-                <span id="caption"><h1>This is text example</h1></span>
-            </li>
-            <li class="carousel__slide">
-                <span id="caption"><h1>Royal Solwezi Hotel</h1></span>
-            </li>
-            <li class="carousel__slide">
-                <span id="caption"><h1>Lorem Ipsum</h1></span>
-            </li>
-            <li class="carousel__slide">
-                <span id="caption"><h1>Lorem Ipsum</h1></span>
-            </li>
-            <li class="carousel__slide">
-                <span id="caption"><h1>Lorem Ipsum</h1></span>
-            </li>
-          </div>
-          <div class="carousel__indicators">
-            <label class="carousel__indicator" for="F"></label>
-            <label class="carousel__indicator" for="G"></label>
-            <label class="carousel__indicator" for="H"></label>
-            <label class="carousel__indicator" for="I"></label>
-            <label class="carousel__indicator" for="J"></label>
-          </div>
-        </div>   
-
-        <br>
-        <br>
-
-        <p>Established for more than forty years, Horizon undertakes project development, investment and asset management. With a particular focus on Europe and Southern Africa, Horizon has operating assets in commercial real estate and information technology, and natural resource projects covering the reprocessing of historic surface mine waste and power generation.</p>
-
-      <div class='footer'>
-        <table>
-          <tr>
-            <th>Who we  are</th>
-            <th>What we do</th> 
-            <th>Team</th>
-            <th>Contact Us</th>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Real Estate</td> 
-            <td>Bradley Rawson</td>
-            <td>Email</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Project Development</td> 
-            <td>Grant Rawson</td>
-            <td>Google Maps</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Private Equity</td> 
-            <td>Charlie Chase-Gardener</td>
-            <td>UK Number: +44 207 397 2889</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Corporate and Social Responsibility</td> 
-            <td>Darius Ghesmati</td>
-            <td>SA Number: +27 83 388 6150</td>
-           </tr>
-            <tr>
-              <td></td>
-              <td></td> 
-              <td>Simon Burt</td>
-              <td></td>
-            </tr>
-          </table>
-        </div>
-      </div>
+    	<div class="social-interact" style="height:0px;padding:0px;margin:0px;">
+    		<script src="js/index.js"></script>
+    	</div>
     </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script> 
-  </body>
+  <div class="largeImage">
+    <h1 style = "position: relative; top: 33%; transform: translateY(-50%); color: #CCB68D; font-size: 50px; text-shadow: 4px, 4px, 8px, #000000">Jack Burt</h1>
+    <h1 style = "position: relative; top: 33%; transform: translateY(-50%); color: #CCB68D; font-size: 23px;">Creative Development</h1>
+
+  </div>
+  <div class="about-header">
+    <h1 id="about-me" >About Me</h1>
+  </div>
+  <div class="about">
+    <div class="content">
+      <p>Currently in my second year of a BSc Computer Science degree at Surrey,
+      I'm just beginning my journey into the world of development. At this stage
+      I'm prioritising experimentation with different ideas, platforms and processes,
+      such as web, app, and game development. There's a long road ahead of me,
+      but one I'm excited to explore.</p>
+      <p>Outside of development, I've always loved being creative, drawing and painting
+      in both digital and traditional media. I'm also football obsessed and a devoted United supporter.</p>
+    </div>
+    <div class="language-grid">
+      <ul>
+        <li data-before = "Java", data-hover = "1 Year"></li>
+        <li data-before = "C#", data-hover = "2 Years"></li>
+        <li data-before = "HTML5", data-hover = "1 Year"></li>
+      </ul>
+      <ul>
+        <li data-before = "CSS3", data-hover = "1 Year"></li>
+        <li data-before = "javascript", data-hover = "<1 Year"></li>
+        <li data-before = "Android", data-hover = "1 Year"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="project-header">
+    <h1 id="projects">Projects</h1>
+  </div>
+  <div class="projects" style="background-color:#4c5660;">
+    <div class="projects-container">
+  		<ul>
+        <li class="cd-single-project">
+          <div class="cd-title">
+            <h2>This website!</h2>
+            <p>Built from scratch using HTML5, CSS3 and jQuery</p>
+          </div> <!-- .cd-title -->
+
+          <div class="cd-project-info">
+            <iframe src="oldDesign/index.html"></iframe>
+            <p>
+              I took a module on web development in my first year at uni, but this is my first real adventure
+              into web design and development. I had a few different designs in mind when I started, including
+              the design to the left being heavily considered, but I decided it was too busy and intense, and settled
+              on the simpler design you can see now.<br><br>
+              I had no experience with javascript before this project so I looked at a few CodePens to help me along
+              with the jQuery implementation of things like the social media icons and projects container.
+            </p>
+          </div> <!-- .cd-project-info -->
+        </li>
+  			<li class="cd-single-project">
+  				<div class="cd-title">
+  					<h2>Retail Game</h2>
+  					<p>Made in Unity</p>
+  				</div> <!-- .cd-title -->
+  				<div class="cd-project-info">
+            <img src="images/retailGame.gif">
+
+  					<p>I started making this game in the summer before Uni, I wanted to make a start
+              on learning the initial concepts of object-oriented programming I made little
+              and slow progress, and abandonned the project quickly, but after my first year
+              when I had a better grasp of the concepts I began to make better progress.
+              <br><br>
+              I started off by creating the base functionality of the game, the basic player animation
+              as well as the movement and rotation of objects in game. I then moved onto the player customisation
+              system and the UI.
+              <br><br>
+              All scripts are written in C#, and all assets are drawn by myself in Adobe Photoshop CC.
+
+  					</p>
+
+  				</div> <!-- .cd-project-info -->
+  			</li>
+  			
+  			<li class="cd-single-project">
+  				<div class="cd-title">
+  					<h2>More projects to come!</h2>
+  					<p>In the near future</p>
+  				</div>
+  				<div class="cd-project-info">
+  					<p>
+  						As I progress through the early stages of my adventure into software development, I will be creating
+              more and more projects I can share on this platform, so keep an eye out for these spots being filled
+              in the near future!
+  					</p>
+  				</div>
+  			</li>
+  			<li class="cd-single-project">
+  				<div class="cd-title">
+  					<h2>More projects to come!</h2>
+  					<p>In the near future</p>
+  				</div> 
+  				<div class="cd-project-info">
+  					<p>
+  						As I progress through the early stages of my adventure into software development, I will be creating
+              more and more projects I can share on this platform, so keep an eye out for these spots being filled
+              in the near future!
+  					</p>
+  				</div>
+  			</li>
+        
+  		</ul>
+  		<a href="#0" class="cd-close">Close</a>
+  		<a href="#0" class="cd-scroll">Scroll</a>
+  	</div> <!-- .project-container -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+  </div>
+  <div class="contact-header">
+    <h1 id ="contact-me">Contact Me</h1>
+  </div>
+  <div class="contact">
+    <div class="content">
+
+      <p>If you want to get in touch for any reason, whether it be for business, a question,
+      or even just a chat, feel free through any of the following methods, I'll get back
+      to you as soon as I can!</p>
+    </div>
+    <!--
+    <div class="comment-form">
+      <form id="contact-form" action="script.php" method="post">
+        <input type="hidden" name="redirect" value="http://www.opera.com" />
+       
+        <ul>
+              <li>Name:</li>
+              <li>
+                  <input type="text" name="name" id="name" value="" />
+              </li>
+              <li>Email:</li>
+              <li>
+                  <input type="text" name="email" id="email" value="" />
+              </li>
+              <li>Subject:</li>
+              <li>
+                  <input type="text" name="subject" id="subject" value="" />
+              </li>
+              <li>Message:</li>
+              <li id="text-area-content">
+                  <textarea name="message" id="message" cols="25" rows="3"></textarea>
+              </li>
+
+              <li id="buttons">
+                  <input type="submit" value="submit" />
+                  <input type="reset" value="reset" />
+              </li>
+          </ul>
+      </form>
+    </div>
+  -->
+  <div class="comment-form">
+    <div class="right">
+      <p>
+        Email: 
+        <br>
+        <a href="mailto:contact@jackburt.me.uk">contact@jackburt.me.uk</a>
+        <br><br>
+        Twitter: <br><a href="http://twitter.com/share? text=%40jackburtdev">@jackburtdev</a>
+        <br><br>
+        LinkedIn: 
+        <br>
+        <a href="https://www.linkedin.com/in/jack-burt-779809124/">Jack Burt</a>
+      </p>
+    </div> 
+    <div class="left">
+      <form id="contact-form" action="https://formspree.io/contact@jackburt.me.uk" method="post">
+          <ul>
+          <li>Name:</li>
+          <li>
+            <input type="text" name="name" id="name" value="" />
+          </li>
+          <li>Email:</li>
+          <li>
+            <input type="text" name="email" id="email" value="" />
+          </li>
+          <li>Subject:</li>
+          <li>
+            <input type="text" name="subject" id="subject" value="" />
+          </li>
+          <li>Message:</li>
+          <li id="text-area-content">
+            <textarea name="message" id="message" cols="25" rows="3"></textarea>
+          </li>
+
+          <li id="buttons">
+            <input type="submit" value="submit" />
+            <input type="reset" value="reset" />
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+
+
+  </div>
+  <div class="footer">
+    <div class="footer-contents">
+      <ul>
+         <li><a href="#top">Home</a></li>
+         <li><a href="#about-me">About</a></li>
+         <li><a href="#projects">Projects</a></li>
+         <li><a href="#contact-me">Contact</a></li>
+      </ul>
+
+    </div>
+    <p>Copyright ©,
+      <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script>
+      Jack Burt.
+    <p>
+  </div>
+</body>
 </html>
