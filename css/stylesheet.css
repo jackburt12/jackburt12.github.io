@@ -471,6 +471,47 @@ padding-top: 14px;
   content: attr(data-hover);
 }
 
+.project-grid {
+  width: 100%;
+  padding-top:30px;
+}
+
+.project-grid ul {
+  list-style: none;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.project-grid li {
+  width: 240px;
+  height: 160px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  padding: 0 auto;
+  font-family: 'Oswald';
+  border-radius: 10px;
+  background-color: #CCB68D;
+}
+
+#horizon {
+  background-image: url("../img/horizon-thumbnail.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+#aquilina {
+  background-image: url("../img/aquilina-thumbnail.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+#burt {
+  background-image: url("../img/burt-thumbnail.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+
 
 .footer {
   clear: both;
@@ -525,7 +566,7 @@ padding-top: 14px;
 
 .projects-container {
   margin-top: -60px;
-  height: 60vh;
+  height: 75vh;
   width: 100vw;
   position: relative;
   overflow-x: hidden;
@@ -804,7 +845,7 @@ padding-top: 14px;
 }
 
 .cd-project-info {
-  width: 70%;
+  width: 70vw;
   align-content: center;
   margin: auto;
   text-align: justify;
@@ -830,7 +871,6 @@ padding-top: 14px;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 3000px;
 }
 .cd-project-info img {
   width: 35%;
